@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %} - pirati.cz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="content">
+      {% block content %}{% endblock %}
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+$(function() {
+  $(".inputs").keyup(function () {
+      if (this.value.length == this.maxLength) {
+        $(this).next('.inputs').focus();
+      }
+    });
+});
+    </script>
+  </body>
+</html>

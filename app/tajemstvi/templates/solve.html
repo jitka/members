@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Tajemství{% endblock %}
+
+{% block content %}
+<h1>
+<div class=description >
+Poprvé v historii voleb obsahují <br> 
+volební lístky tajemku.<br> 
+Našli jste ji?
+</div>
+</h1>
+  <form method="post">
+    <input name="solution1" id="solution1" class="inputs" maxlength="1" required>
+    <input name="solution2" id="solution2" class="inputs" maxlength="1" required>
+    <input name="solution3" id="solution3" class="inputs" maxlength="1" required>
+    <input name="solution4" id="solution4" class="inputs" maxlength="1" required>
+    <input name="solution5" id="solution5" class="inputs" maxlength="1" required>
+    <input name="solution6" id="solution6" class="inputs" maxlength="1" required>
+,
+    <input name="solution7" id="solution7" class="inputs" maxlength="1" required>
+    <input name="solution8" id="solution8" class="inputs" maxlength="1" required>
+    <input name="solution9" id="solution9" class="inputs" maxlength="1" required>
+    !
+    {#
+    <label for="nickname">prezdivka</label>
+    <input name="nickname" id="nickname" required>
+    #}
+    <br>
+    <input type="submit" value="Je to správně?">
+  </form>
+  <img src="static/logo_napis_white.png" height="40" >
+{% endblock %}
