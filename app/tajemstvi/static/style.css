@@ -6,7 +6,7 @@ src: url('fonts/BebasNeueRegular.ttf');
 
 html { font-family: 'Roboto Condensed'; background: #eee; padding: 1rem; color: white}
 body { max-width: 960px; margin: 0 auto; background: black; min-height: 420px; text-align: center; margin-top: 20px; font-size: 30px; padding: 70px 0 }
-h1 { font-family: 'myFont'; font-size: 40px}
+h1 { font-family: 'myFont'; font-size: 35px}
 a { color: #377ba8; }
 hr { border: none; border-top: 1px solid lightgray; }
 nav { background: lightgray; display: flex; align-items: center; padding: 0 0.5rem; }
