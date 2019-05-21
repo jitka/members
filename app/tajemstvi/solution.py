@@ -11,7 +11,13 @@ bp = Blueprint('solution', __name__, url_prefix='/')
 def check(solution):
     def clean(solution):
         tabulka = tabulka =dict(zip("áčďéěíňóřšťúůüýžabcdefghijklmnopqrstuvwxyz","acdeeinorstuuuyzabcdefghijklmnopqrstuwxyz"))
-        return "".join([ tabulka[ch] for ch in list(solution) ])
+        cleaned = []
+        for char in solution:
+            if char in tabulka:
+                cleaned.append(tabulka[char])
+            else:
+                cleaned.append(char)
+        return "".join(cleaned)
     cleaned = clean(solution.lower())
     return cleaned == "buresicau"
 
