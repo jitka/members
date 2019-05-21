@@ -29,7 +29,8 @@ nav ul li a, nav ul li span, header .action { display: block; padding: 0.5rem; }
 input.danger { color: #cc2f2e; }
 input[type=submit] { align-self: start; min-width: 10em; min-height:75px; font-size: 30px; font-family: inherit;  }
 button {
-    font-family : inherit;
+    font-family: inherit;
     font-size: 1em;
+    min-width: 100px;
 }
 
