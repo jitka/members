@@ -1,18 +1,16 @@
 
-# Tajemstvi
+# Members
 
-Obdoba: https://github.com/Kedrigern/docker/tree/master/flask3-cislovky
+Obdoba: 
+https://github.com/jitka/tajemstvi
 
 ## Run
 
-Build image: `docker build -t tajemstvi .`
+Build image: `docker build -t members .`
 
-Ve Fedoře je ještě třeba vypnout selinux: `sudo /sbin/setenforce 0`
+Ve Fedoře je ještě třeba vypnout selinux: `sudo /sbin/setenforce 0`,
+v Ubuntu/debianu můžete pouštět docker pod rootem nebo zkusit podman 
+(TODO otestovat)
 
-Run image: `docker run --name tajemstvi -v "$PWD/instance:/app/instance:rw" -p 80:80 --rm tajemstvi`
+Run image: `docker run --name members -v "$PWD/instance:/app/instance:rw" -p 80:80 --rm members`
 
-## DB
-
-Využije se: `instance/tajemstvi.sqlite` (a je tedy i perzistentní)
-
-Pokud chceme vynulovat počítadlo, tak prázdná inicializovaná DB: `instance/tajemstvi-empty.sql`

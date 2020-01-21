@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
 
-from tajemstvi import create_app
+from members import create_app
 
 app = create_app()
