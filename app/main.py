@@ -17,15 +17,16 @@ def countMembersHtml(html):
     return pageUsers - unregistred - registred
 
 def countMembers(total):
-    #TODO prvni a posledni
+    r = requests.get('https://forum.pirati.cz/memberlist.php')
+    users = countMembersHtml(r.text)
     for i in range(100,total,100):
         r = requests.get('https://forum.pirati.cz/memberlist.php?start='+str(i))
-        print(countMembersHtml(r.text))
+        users += countMembersHtml(r.text)
+    return users
 
 @app.route('/members/')
 def example():
-    return {'members': 11488}
+    return {'members': countMembers(11519)}
 
 if __name__ == "__main__":
-    print(countMembers(11519))
-    #app.run(debug=True)
+    app.run(debug=True)
