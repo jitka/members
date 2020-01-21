@@ -1,0 +1,3 @@
+*.swp
+app/env/*
+app/members/__pycache__/*
