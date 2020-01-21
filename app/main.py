@@ -3,7 +3,7 @@
 #https://www.flaskapi.org/
 
 import requests
-from members import create_app #TODO promazat import
+#TODO promazat import
 from flask import request, url_for
 from flask_api import FlaskAPI, status, exceptions
 
