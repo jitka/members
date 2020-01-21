@@ -14,3 +14,13 @@ v Ubuntu/debianu můžete pouštět docker pod rootem nebo zkusit podman
 
 Run image: `docker run --name members -v "$PWD/instance:/app/instance:rw" -p 80:80 --rm members`
 
+## Ručně
+```
+cd app
+python3 -m venv env
+. env/bin/activate
+pip3 install -r requirements.txt
+python3 ./main.py
+```
+
+

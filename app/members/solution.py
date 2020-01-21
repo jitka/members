@@ -4,7 +4,7 @@ import flask
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, session, url_for
 )
-from tajemstvi.db import get_db
+from members.db import get_db
 
 bp = Blueprint('solution', __name__, url_prefix='/')
 
